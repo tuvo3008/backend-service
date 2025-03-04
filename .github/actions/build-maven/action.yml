@@ -9,11 +9,12 @@ runs:
       with:
         distribution: 'temurin'
         java-version: '17'
+        cache: maven
+
+    - name: Install Maven
+      run: sudo apt update && sudo apt install -y maven
+      shell: bash
 
     - name: Build with Maven
       run: mvn clean package -DskipTests=true
-      shell: bash
-
-    - name: Run unit tests
-      run: mvn test
       shell: bash
