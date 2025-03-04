@@ -17,12 +17,4 @@ jobs:
           with:
             version: 17
             
-        # - name: Build Docker Image
-        #   uses: ./.github/actions/build-docker-image
-        #   with:
-        #     image_name: 774305578623.dkr.ecr.ap-southeast-1.amazonaws.com/promotionapp-ui
-        #     tag: pr
-
-        #- SonarQube
-        # - Unit
-        # - Automation Test
+        
